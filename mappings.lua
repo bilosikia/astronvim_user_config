@@ -9,6 +9,7 @@ return {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
+    ["<leader>q"] = { "<cmd>confirm qall<cr>", desc = "Quit all" },
     -- git
     ["<leader>gd"] = { ":DiffviewOpen HEAD~<cr>", desc = "HEAD commit view" },
     -- tab
