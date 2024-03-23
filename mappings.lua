@@ -26,6 +26,8 @@ return {
       function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
       desc = "Find all files",
     },
+    ["<leader>d/"] = { ": Telescope dir live_grep<CR>", desc = "livegrep in dir" },
+    ["<leader>d<leader>"] = { ": Telescope dir find_files<CR>", desc = "find files in dir" },
     -- terminal
     ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }
   },
