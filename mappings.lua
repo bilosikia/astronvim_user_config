@@ -10,6 +10,8 @@ return {
       desc = "Previous buffer",
     },
     ["<leader>q"] = { "<cmd>confirm qall<cr>", desc = "Quit all" },
+    -- neotree
+    ["<leader>O"] = { "<cmd>Neotree reveal<cr>", desc = "neotree reveal" },
     -- git
     ["<leader>gd"] = { ":DiffviewOpen HEAD~<cr>", desc = "HEAD commit view" },
     -- tab
@@ -29,7 +31,9 @@ return {
     ["<leader>d/"] = { ": Telescope dir live_grep<CR>", desc = "livegrep in dir" },
     ["<leader>d<leader>"] = { ": Telescope dir find_files<CR>", desc = "find files in dir" },
     -- terminal
-    ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }
+    ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    -- past
+    ["P"] = {'"0p', desc = "past with copy register"}
   },
 
   v = {
@@ -38,6 +42,7 @@ return {
       "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
       desc = "Toggle comment for selection",
     },
+    ["P"] = {'"0p', desc = "past with copy register"}
   },
   t = {
     -- terminal
