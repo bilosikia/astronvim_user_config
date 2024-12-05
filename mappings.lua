@@ -33,7 +33,9 @@ return {
     -- terminal
     ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     -- past
-    ["P"] = {'"0p', desc = "past with copy register"}
+    ["P"] = {'"0p', desc = "past with copy register"},
+    -- neotree
+    ["<leader>O"] = { "<cmd>Neotree reveal<cr>", desc = "Toggle Explorer Reveal" }
   },
 
   v = {
